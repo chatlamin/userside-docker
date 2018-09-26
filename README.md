@@ -50,6 +50,14 @@ sudo make install
 ```
 This action will complete the installation and configuration of the application.
 
+Create Git repo:
+```
+sudo cd /opt/userside
+sudo git init
+sudo git add --all .
+sudo git commit -m "Initial commit"
+```
+
 After that you can fully use the ERP USERSIDE.
 
 BACKUP USERSIDE DATA
