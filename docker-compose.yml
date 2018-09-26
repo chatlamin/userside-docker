@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       LANG: ru_RU.UTF-8
-      TZ: 'Europe/Zaporozhye'
+      TZ: 'Europe/Moscow'
       POSTGRES_DB: userside
       POSTGRES_USER: userside
       POSTGRES_PASSWORD: userside
@@ -15,6 +15,8 @@ services:
       - backup:/backup
     networks:
       - internal
+    ports:
+      - "5432:5432"
 
   fpm:
     depends_on:
@@ -22,7 +24,7 @@ services:
     image: erpuserside/fpm:3.12
     restart: always
     environment:
-      TZ: 'Europe/Zaporozhye'
+      TZ: 'Europe/Moscow'
     volumes:
       - www:/app/userside
       - backup:/backup
