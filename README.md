@@ -8,7 +8,7 @@ sudo make install
 
 sudo cd /opt/userside
 sudo git init
-sudo git remote add origin bitbucket.org/zencom/userside.git
+sudo git remote add origin https://bitbucket.org/zencom/userside.git
 sudo git add --all .
 sudo git commit -m "ЗДЕСЬ УКАЖИТЕ НОМЕР ВЕРСИИ"
 sudo git push -u origin master
